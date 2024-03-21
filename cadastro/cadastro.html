@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CadastroDeClientes</title>
+
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <link rel="stylesheet" type="text/css" href="../reset.css">
+    <link rel="stylesheet" type="text/css" href="../header.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo">garcia</span>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a>Cadastro</a></li>
+            </ul>
+            <a class="git">Github</a>
+        </nav>
+    </header>
+
+    <main>  
+        <div class="principal">  
+            <div id="cab"><h1>Cadastro de Clientes</h1></div>    
+            <form name="CadClientes" method="post" action="cadastro.php" class="formulario">
+                <div>
+                <label>Nome</label><input type="text" name="nome" id="nome" required autofocus maxlength="50"><br></div>        
+                <table>
+                    <td>
+                        <label>Cep<br></label><input type="text" name="cep" id="cep" placeholder="00.000-000" required>
+                    </td>
+                    <td>
+                        <label>Número<br></label><input type="text" name="numero" id="numero" required>
+                    </td>
+                </table>
+                <label>Endereço</label><input type="text" name="endereco" id="endereco" required><br> 
+                <table>    
+                    <td>   
+                        <label>Bairro<br></label><input type="text" name="bairro" id="bairro" required>
+                    </td>
+                    <td>
+                        <label>Cidade<br></label><input type="cidade" name="cidade" id="cidade" required>
+                    </td>
+                    <td id="estc01">
+                        <label>Estado  </label><select name="estado" id="estado" required>
+                            <option value=""></option>
+                            <option value="ac">AC</option><option value="al">AL</option><option value="ap">AP</option>
+                            <option value="am">AM</option><option value="ba">BA</option><option value="ce">CE</option>
+                            <option value="df">DF</option><option value="es">ES</option><option value="go">GO</option>
+                            <option value="ma">MA</option><option value="mt">MT</option><option value="ms">MS</option>
+                            <option value="mg">MG</option><option value="pa">PA</option><option value="pb">PB</option>
+                            <option value="pr">PR</option><option value="pe">PE</option><option value="pi">PI</option>
+                            <option value="rj">RJ</option><option value="rn">RN</option><option value="rs">RS</option>
+                            <option value="ro">RO</option><option value="rr">RR</option><option value="sc">SC</option>
+                            <option value="sp">SP</option><option value="se">SE</option><option value="to">TO</option>
+                        </select>
+                    </td>
+                </table>
+                <table>     
+                    <td>   
+                        <label>Telefone<br></label><input type="text" name="telefone" id="telefone" placeholder="(00)0000-0000" required>
+                    </td>
+                    <td>    
+                        <label>Celular<br></label><input type="text" name="celular" id="celular" placeholder="(00)00000-0000" required>
+                    </td>  
+                </table>
+                <table>
+                    <td>
+                        <label>Email<br></label><input type="email" name="email" id="email" required>
+                    </td>
+                    <td>
+                        <label>Data de nascimento<br></label><input type="date" name="data" id="data" required>
+                    </td>
+                </table>
+                <fieldset>
+                    <legend>Estado Civil</legend>
+                    <input type="radio" name="estCivil" id="estCivil" value="solteiro">Solteiro
+                    <input type="radio" name="estCivil" id="estCivil" value="casado">Casado
+                    <input type="radio" name="estCivil" id="estCivil" value="divorciado">Divorciado
+                    <input type="radio" name="estCivil" id="estCivil" value="viuvo">Viúvo
+                </fieldset><br>
+                <table>
+                    <td>
+                        <div style="text-align: center;"><input type="reset" value="Limpar" name="limpar" id="limpar"></div>   
+                    </td>
+                    <td>             
+                        <div style="text-align: center;"><input type="submit" value="Enviar" name="enviar" id="enviar"></div>
+                    </td>
+                </table>    
+            </form> 
+        </div>
+    </main>   
+</body>
+</html>
